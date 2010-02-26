@@ -1,0 +1,35 @@
+# Interface definition for thorn MapPoints
+# $Header:$
+
+implements: MapPoints
+
+uses include header: vect.hh
+
+uses include header: carpet.hh
+
+# Access coordinate information (on the coarse level)
+CCTK_INT FUNCTION GetCoordRange        \
+    (CCTK_POINTER_TO_CONST IN  cctkGH, \
+     CCTK_INT              IN  m,      \
+     CCTK_INT              IN  ml,     \
+     CCTK_INT              IN  size,   \
+     CCTK_INT        ARRAY OUT gsh,    \
+     CCTK_REAL       ARRAY OUT lower,  \
+     CCTK_REAL       ARRAY OUT upper,  \
+     CCTK_REAL       ARRAY OUT delta)
+PROVIDES FUNCTION GetCoordRange WITH Carpet_GetCoordRange LANGUAGE C
+
+
+CCTK_INT FUNCTION MapPoints_MapPoints \
+    (CCTK_POINTER_TO_CONST IN cctkGH,            \
+     CCTK_INT IN N_dims,                         \
+     CCTK_INT IN param_table_handle,             \
+     CCTK_INT IN coord_system_handle,            \
+     CCTK_INT IN N_interp_points,                \
+     CCTK_INT IN interp_coords_type_code,        \
+     CCTK_POINTER_TO_CONST ARRAY IN coords_list, \
+     CCTK_POINTER ARRAY OUT procs,               \
+     CCTK_POINTER ARRAY OUT rlev)
+PROVIDES FUNCTION MapPoints \
+   WITH MapPoints_MapPoints    \
+   LANGUAGE C

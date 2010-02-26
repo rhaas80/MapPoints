@@ -1,0 +1,9 @@
+Cactus Code Thorn MapPoints
+Author(s)    : Roland Haas <roland.haas@physics.gatech.edu>
+Maintainer(s): Roland Haas <roland.haas@physics.gatech.edu>
+Licence      : GPL >=v2
+--------------------------------------------------------------------------
+
+1. Purpose
+
+Provides a helper function to inquire the finest level on which a set of corrdinates exists

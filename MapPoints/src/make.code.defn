@@ -1,0 +1,8 @@
+# Main make.code.defn file for thorn MapPoints
+# $Header:$
+
+# Source files in this directory
+SRCS = MapPoints.cc
+
+# Subdirectories containing source files
+SUBDIRS = 

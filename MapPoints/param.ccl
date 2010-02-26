@@ -1,0 +1,10 @@
+# Parameter definitions for thorn MapPoints
+# $Header:$
+
+BOOLEAN tree_search "Use a tree search to find the source processor" STEERABLE=always
+{
+} "no"
+
+BOOLEAN check_tree_search "Cross-check the result of the tree search" STEERABLE=always
+{
+} "no"
