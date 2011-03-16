@@ -11,7 +11,7 @@
 #include "carpet.hh"
 
 
-namespace MapPoints {
+namespace MapPointsNames {
 
   using namespace Carpet;
 
