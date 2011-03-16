@@ -20,7 +20,7 @@ CCTK_INT FUNCTION GetCoordRange        \
 PROVIDES FUNCTION GetCoordRange WITH Carpet_GetCoordRange LANGUAGE C
 
 
-CCTK_INT FUNCTION MapPoints_MapPoints \
+CCTK_INT FUNCTION MapPoints \
     (CCTK_POINTER_TO_CONST IN cctkGH,            \
      CCTK_INT IN N_dims,                         \
      CCTK_INT IN param_table_handle,             \
