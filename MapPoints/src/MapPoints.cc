@@ -124,8 +124,8 @@ namespace MapPointsNames {
       assert (arrdata.AT(coord_group).AT(0).hh->reflevels() ==
               arrdata.AT(coord_group).AT(m).hh->reflevels());
     }
-    int const minrl = reflevel;
-    int const maxrl = reflevel+1;
+    int const minrl = 0;
+    int const maxrl = arrdata.AT(coord_group).AT(0).hh->reflevels();
 
     // Find maximum number of components over all levels and maps
     int maxncomps = 0;
