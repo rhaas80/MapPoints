@@ -17,7 +17,7 @@ CCTK_INT FUNCTION GetCoordRange        \
      CCTK_REAL       ARRAY OUT lower,  \
      CCTK_REAL       ARRAY OUT upper,  \
      CCTK_REAL       ARRAY OUT delta)
-PROVIDES FUNCTION GetCoordRange WITH Carpet_GetCoordRange LANGUAGE C
+USES FUNCTION GetCoordRange
 
 
 CCTK_INT FUNCTION MapPoints \
